@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cv-favicon.ico" type="image/x-icon">
+    <title>Exercício 012 - Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <h2>Acessando o repositório no Github do Professor Gustavo Guanabara</h2>
+    <!-- target="_blank" abre o link em outra aba; rel="external" indica que o link referenciado é externo ao da página atual -->
+    <p>Acesse o repositório <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">clicando aqui!</a></p>
+    <h2>Acessando o canal (gratuito) no Youtube do Curso em Vídeo</h2>
+    <p>Basta <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">clicar aqui!</a></p>
+
+    <h1>Usando links internos</h1>
+    <h2>Acessando a página dois do site</h2>
+    <!-- rel="next" relaciona o link à próxima página do mesmo site -->
+    <p>Esta é a primeira página do site. Para acessar a página dois, <a href="pag002.html" rel="next">clique aqui!</a></p>
+
+    <h2>Acessando a página três do site</h2>
+    <!-- é necessário neste caso informar todo o caminho/diretório para a página 003 do site -->
+    <p>Clicando <a href="noticias/pag003.html" rel="next">aqui</a> você será direcioando para a terceira página deste site.</p>
+
+    <h2>Acessando a página quatro do site</h2>
+    <!-- página quatro se encontra na pasta galeria, que se encontra dentro da pasta noticias -->
+    <p>A página de galeria de imagens deste site se encontra na página quatro. Clique <a href="noticias/galeria/pag004.html" rel="next">aqui</a> para acessá-la!</p>
+
+    <h1>Usando links para download</h1>
+    <h2>Lista dos arquivos</h2>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Link para o arquivo em PDF</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Link para o arquivo ZIP</a></li>
+    </ul>
+</body>
+</html>

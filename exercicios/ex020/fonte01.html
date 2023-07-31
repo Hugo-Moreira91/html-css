@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        /* Segundo a W3C, os dois tipos de tamanho recomendados são o 'px' (tamanho absoluto) e o 'em' (tamanho relativo) */
+
+        /* Importando uma fonte via URL do Google Fonts */
+
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        h1, h2{
+            font: normal 600 1.8em 'Work Sans', sans-serif;
+            /*
+            font-family: 'Work Sans', 'Times New Roman', Times, serif;
+            font-size: 1.8em;    /* Neste caso pega-se os 17px definidos no body e multiplica-se por 1.8 = 30.6px */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, animi quos magni est harum mollitia exercitationem ratione? Deleniti ipsum molestiae unde reprehenderit excepturi. Rerum, perspiciatis. Autem quo nihil mollitia obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora eum maiores aliquam ut ipsa doloribus deleniti, cumque voluptas expedita inventore tenetur totam fuga aliquid veritatis ratione repudiandae corporis error! At! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam repellendus explicabo dolores aut neque ab sapiente veniam fugit culpa, incidunt quas optio, quibusdam a, vel voluptates nemo? Corporis, consectetur.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum perspiciatis quae minima blanditiis. Officia a iure distinctio facilis aperiam. Consequuntur adipisci quos temporibus corrupti ipsa sequi exercitationem maxime laborum. Ullam?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam earum corrupti totam iste aliquid non quis numquam! Placeat sed et fuga culpa, reprehenderit perferendis deserunt quisquam iste saepe ad architecto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro saepe reiciendis possimus quae quasi eligendi est ducimus eum dicta unde, fugiat consequuntur temporibus, commodi impedit aliquid distinctio. Assumenda, eveniet enim.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta tenetur sequi veritatis, repudiandae natus minima molestiae quaerat, corrupti sed voluptatum tempora porro corporis possimus asperiores officiis blanditiis cum iusto.</p>
+</body>
+</html>

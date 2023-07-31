@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cv-favicon.ico" type="image/x-icon">
+    <title>Mídias - Trabalhando com Áudio</title>
+</head>
+<body>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Aprendendo a reproduzir áudios em HTML5</p>
+    <!-- Forma básica de adição de um áudio ao site -->
+    <!--
+    <audio src="midia/dream-it.mp3" controls></audio>
+    -->
+    <!-- Forma mais trabalhada de adição de um áudio ao site -->
+    <audio controls>
+        <source src="midia/dream-it.mp3" type="audio/mpeg">
+        <!-- Neste exemplo o áudio não possui as versões WAV e OGG - porém seria interessante tê-los (evitar ao máximo o arquivo do tipo WAV) -->
+        <!--
+        <source src="midia/dream-it.ogg" type="audio/ogg">
+        <source src="midia/dream-it.wav" type="audio/wav">
+        -->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/dream-it.mp3">Clique aqui para baixar o arquivo.</a></p>
+    </audio>
+</body>
+</html>

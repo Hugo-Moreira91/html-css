@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cv-favicon.ico" type="image/x-icon">
+    <title>Mídias - Trabalhando Tamanho de Imagens</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente/diminua o tamanho do seu navegador para ver o que irá acontecer!</p>
+
+    <!-- Trabalhando com o valor max-width no parâmetro media -->
+    <picture>
+        <!-- Tela até 750px de largura carrega imagem tam P -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> 
+        <!-- Tela entre 750 e 1050px carrega imagem tam M -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> 
+        <!-- Tela acima de 1050px carrega imagem base (tam G) -->
+        <img src="imagens/foto-g.png" alt="Imagem flexível - tamanho grande"> <!-- Tamanho base da imagem que se deseja carregar no site -->
+    </picture>
+
+    <!-- Trabalhando com o valor min-width no parâmetro media: perceba a alteração na ordem tanto do tamanho da tela (em pixels) quanto no carregamento das imagens, em cada caso -->
+    <!--
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="Imagem flexível">
+    </picture> 
+    -->
+</body>
+</html>
