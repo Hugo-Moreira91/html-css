@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            height: 200px;
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        table > caption{
+            padding: 5px;
+        }
+
+        tbody > tr > td{
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células na Tabela</h1>
+    <table>
+        <caption>Exemplo de Mesclagem de Células</caption>
+        <tbody>
+            <tr>
+                <td rowspan="3">A</td>
+                <td colspan="2">B</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td rowspan="2">I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>K</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
