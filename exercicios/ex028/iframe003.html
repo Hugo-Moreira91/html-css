@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        iframe{
+            display: block;
+            margin: auto;
+            height: 400px;
+            width: 92vw;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ducimus accusamus nulla placeat sequi, voluptatem facere necessitatibus dicta consectetur ipsa eum modi, consequatur nostrum ea accusantium magni perspiciatis! Veniam, vitae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis nostrum ducimus facere rerum eum quae consequuntur natus deleniti fuga asperiores, quibusdam, molestias dolorem nemo minima? Rerum, eaque. Sapiente, cum dolorum.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame" rel="next">Primeira página</a></li>
+        <li><a href="paginas-extras/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellendus similique quo voluptas veritatis earum vel nobis soluta praesentium autem quia numquam assumenda beatae suscipit iure, modi molestias tempora deleniti. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, autem harum omnis ullam sit, optio aperiam voluptas soluta quo expedita perferendis labore velit quidem quos ipsum asperiores laboriosam hic debitis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro sit veritatis illo nobis reiciendis voluptate ea sequi iure sed, qui necessitatibus eum, reprehenderit quidem sint facilis architecto tenetur natus asperiores.</p>
+
+    <!-- Parâmetro name serve para linkar uma determinada âncora, através do parâmetro target, ao iframe -->
+    <iframe src="paginas-extras/pagina-inicial.html" name="frame" frameborder="1">
+        <p>Infelizmente seu navegador não é compatível com este conteúdo!</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reiciendis vel placeat repudiandae nulla nobis fugiat, non corrupti vitae doloribus dicta eveniet et debitis. Nisi voluptatem dolores quia reiciendis molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. In quasi corrupti aperiam. Architecto expedita aspernatur totam nihil veritatis accusantium facere libero similique accusamus? Laudantium officiis voluptatum veniam rem nam? Quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro vel alias in omnis quaerat, tempora excepturi magnam voluptatem quam provident placeat saepe suscipit sint architecto modi ullam laboriosam fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquam nisi, reprehenderit similique facilis omnis quibusdam necessitatibus. Excepturi praesentium eaque rerum repellendus aliquid! Culpa totam, cumque laboriosam sed ex quidem!</p>
+</body>
+</html>
