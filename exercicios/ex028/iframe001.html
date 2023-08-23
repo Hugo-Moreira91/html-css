@@ -4,17 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            height: 500px;
+            width: 350px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de iframes</h1>
-    <p>Acessando o site do 
+    <p>Acesse o site do 
         
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="no">
+            <!-- Caso o dispositivo não seja compatível com iframe o link abaixo será exibido no lugar -->
+            <a href="https://www.cursoemvideo.com" target="_blank" rel="external">CursoemVideo</a>
+        </iframe>
 
         para aprender a programar.
     </p>
+    <!-- Exemplo de site que possui bloqueio de iframe -->
     <p>
-        O site do <iframe src="https://www.google.com" frameborder="0"></iframe> é muito bom para buscar o que lhe interessa.
+        O site do <iframe src="https://www.google.com" frameborder="0"></iframe> é muito bom para buscar o que lhe interessa. Porém possui um mecanismo de bloqueio para iframe.
+    </p>
+    <p>
+        O repositório do Gustavo Guanabara
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0">
+            <!-- Caso o dispositivo não seja compatível com iframe o link abaixo será exibido no lugar -->
+            no <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Github</a>
+        </iframe>
+        
+        é este, e nele aprendemos muito sobre desenvolvimento web. Confiram lá!
     </p>
 </body>
 </html>
