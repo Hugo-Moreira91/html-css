@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form > div{
+            padding: 5px 0;
+        }
+
+        form > p{
+            font-size: 0.8em;
+            font-style: italic;
+        }
+
+        form p.info-extras{
+            display: inline;
+            font-size: 0.8em;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <!-- para formulários que possuem dados sensíveis de inserção (como senha), usar o método POST -->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <label for="iusuario">Usuário* : </label>
+            <input type="text" name="usuario" id="iusuario" maxlength="20" placeholder="Nome do usuário" autocomplete="username" required> <p class="info-extras">(máx. 20 caracteres)</p>
+        </div>
+        <div>
+            <label for="isenha">Senha* : </label>
+            <input type="password" name="senha" id="isenha" minlength="5" maxlength="8" size="8" placeholder="Senha" autocomplete="current-password" required> <p class="info-extras">(5 a 8 caracteres)</p>
+        </div>
+        <p>* (Campos obrigatórios)</p>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
