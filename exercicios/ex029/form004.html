@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        fieldset{
+            max-width: 450px;
+        }
+
+        form p{
+            font-size: 0.8em;
+            font-style: italic;
+        }
+
+        div.campos{
+            padding: 5px 0;
+        }
+
+        p.info-extras{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="campos">
+                <label for="inome">Nome * : </label>
+                <input type="text" name="nome" id="inome" placeholder="Nome completo" maxlength="30" autocomplete="name" required>
+                <p class="info-extras">(máx. 30 caracteres)</p>
+            </div>
+            <div class="campos">
+                <label for="iemail">E-mail * : </label>
+                <input type="email" name="email" id="iemail" placeholder="E-mail" autocomplete="email" required>
+            </div>
+            <div class="campos">
+                <label for="itelefone">Telefone Celular * : </label>
+                <input type="tel" name="telefone" id="itelefone" placeholder="(xx)xxxxx-xxxx" autocomplete="mobile" maxlength="14" size="10" pattern="^\d(\d{2}\)\d{5}-\d{4}$" required>
+            </div>
+            <p>* (Campos obrigatórios)</p>
+            <div class="campos">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar Campos">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
