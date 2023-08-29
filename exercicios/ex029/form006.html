@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.campos{
+            padding: 8px 0;
+        }
+
+        fieldset{
+            max-width: 500px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário - elementos color, range e file em HTML</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div class="campos">
+            <label for="icor">Cor : </label>
+            <input type="color" name="cor" id="icor" value="#00ff77">
+        </div>
+        <div class="campos">
+            <label for="inivel">Nível de Satisfação : </label>
+            0 <input type="range" name="nivel" id="inivel" min="0" max="10" step="1"> 10
+        </div>
+        <fieldset>
+            <legend>Seleção de Arquivo</legend>
+            <div class="campos">
+                <input type="file" name="arq" id="iarq">
+            </div>
+        </fieldset>
+        <div class="campos">
+            <input type="submit" value="Submeter Dados">
+            <input type="reset" value="Limpar Dados">
+        </div>
+    </form>
+</body>
+</html>
