@@ -2,3 +2,94 @@
 
 /* Versão para as demais mídias */
 
+/* Typical Device Breakpoints - aula de 2020 do CursoemVideo
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px 
+Desktop: de 992px até 1200px
+Grandes Telas: acima de 1200px
+ */
+
+ /* Para Impressão */
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url('../imagens/back-print.jpg'); /* Desnecessário - não há como imprimir uma imagem de fundo usando background-image */
+    }
+
+    body::after{
+        content: "Impressão feita através do site www.cursoemvideo.com";
+        display: block;
+        margin: 15px auto;
+        padding: 10px;
+        width: 45vw;
+        font-size: 0.8em;
+        border: 1px dashed black;
+    }
+
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone{ display: none; }
+    img#print{ display: block; }
+}
+
+/* Para pequenas telas e celulares não será necessário criar @media screen, pois o site foi criado sob o aspecto do mobile first - o @media all 
+
+@media screen and (max-width: 600px){
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px){
+
+}
+
+*/
+
+/* Para Tablets */
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    body{
+        background: black url('../imagens/back-tablet.jpg') center center/cover no-repeat;
+    }
+
+    img#phone{ display: none; }
+    img#tablet{ display: block; }
+}
+
+/* Para Desktops */
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    body{
+        background: black url('../imagens/back-pc.jpg') center center/cover no-repeat;
+    }
+
+    img#phone{ display: none; }
+    img#pc{ display: block; }
+}
+
+/* Para Telas Grandes */
+
+@media screen and (min-width: 1201px){
+    body{
+        background: black url('../imagens/back-tv.jpg') center center/cover no-repeat;
+    }
+
+    main{
+        width: 75vw;
+    }
+
+    img#phone{ display: none; }
+    img#tv{ display: block; }
+}
