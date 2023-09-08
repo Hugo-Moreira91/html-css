@@ -37,10 +37,6 @@ span#burguer{
     cursor: pointer;
 }
 
-span#burguer:hover{
-    background-color: #2B2118;
-}
-
 menu{
     display: none;
 }
