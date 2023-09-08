@@ -1,6 +1,6 @@
 /* Funcionalidades do site */
 
-function openMenu(){
+function clickMenu(){
     if(itens.style.display == 'block'){
         itens.style.display = 'none'
     }else{
