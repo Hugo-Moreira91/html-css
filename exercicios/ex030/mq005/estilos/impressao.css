@@ -1,0 +1,27 @@
+@charset 'UTF-8';
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header h1{
+    font-size: 2.8em;
+    color: black;
+    text-shadow: none;
+}
+
+span#burguer{
+    display: none;
+}
+
+main > section{
+    box-shadow: none;
+}
+
+body::after{
+    content: "Projeto impresso desenvolvido por Hugo César nas aulas do CursoemVideo";
+}
+
+footer{
+    display: none;
+}
