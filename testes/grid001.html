@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            grid-template-rows: 60% 40%;
+        }
+        div.square01{
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+            background-color: red;
+        }
+        div.square02{
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            background-color: green;
+        }
+        div.square03{
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            background-color: aqua;
+        }
+        div.square04{
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            background-color: darkgoldenrod;
+        }
+        div.square05{
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="square01">Example 01</div>
+        <div class="square02">Example 02</div>
+    </div>
+    <div class="container2">
+        <div class="square03">Example 03</div>
+        <div class="square04">Example 04</div>
+        <div class="square05">Example 05</div>
+    </div>
+</body>
+</html>
