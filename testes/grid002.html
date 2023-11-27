@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            padding: 20px;
+        }
+        main{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        .square01{
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+            background-color: purple;
+        }
+        .square02{
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            background-color: greenyellow;
+        }
+        .square03{
+            grid-column: 4;
+            grid-row: 1 / 3;
+            background-color: brown;
+        }
+        .square04{
+            grid-column: 1;
+            grid-row: 2 / 3;
+            background-color: darkcyan;
+        }
+        .square05{
+            grid-column: 2 / 4;
+            grid-row: 2 / 3;
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="square01">Text 01</div>
+        <div class="square02">Text 02</div>
+        <div class="square03">Text 03</div>
+        <div class="square04">Text 04</div>
+        <div class="square05">Text 05</div>
+    </main>
+</body>
+</html>
