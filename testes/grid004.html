@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 1440px;
+            height: 900px;
+            border: 1px solid red;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+        }
+
+        .container-txt{
+            text-align: center;
+            width: 90%;
+        }
+
+        .container-grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        #supervisor{
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        #team-builder{
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+        }
+
+        #karma{
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+
+        #calculator{
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container-txt">
+            <h1>Lorem ipsum dolor.</h1>
+            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In rerum autem cupiditate reprehenderit, odit perspiciatis perferendis a dolor ducimus doloremque explicabo delectus, aut debitis, enim ipsam sed illum iusto illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum velit ab maxime, modi maiores itaque quam blanditiis magni repellendus porro sequi tenetur expedita, aliquid dolore saepe ducimus architecto illum? Expedita?
+            </p>
+        </div>
+        <div class="container-grid"> <!-- aqui aplica-se o display grid -->
+            <div id="supervisor" class="box">
+                <div class="bg-line"></div>
+                <h2>Supervisor</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus in dignissimos suscipit sit magnam sint impedit accusantium nulla quo vel, recusandae alias ea repellendus nostrum! Quaerat necessitatibus explicabo eos deserunt!
+                </p>
+                <img src="lupa.png" alt="Lupa">
+            </div>
+            <div id="team-builder" class="box">
+                <h2>Team Builder</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus in dignissimos suscipit sit magnam sint impedit accusantium nulla quo vel, recusandae alias ea repellendus nostrum! Quaerat necessitatibus explicabo eos deserunt!
+                </p>
+                <img src="lupa.png" alt="Lupa">
+            </div>
+            <div id="karma" class="box">
+                <h2>Karma</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus in dignissimos suscipit sit magnam sint impedit accusantium nulla quo vel, recusandae alias ea repellendus nostrum! Quaerat necessitatibus explicabo eos deserunt!
+                </p>
+                <img src="lupa.png" alt="Lupa">
+            </div>
+            <div id="calculator" class="box">
+                <h2>Calculator</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus in dignissimos suscipit sit magnam sint impedit accusantium nulla quo vel, recusandae alias ea repellendus nostrum! Quaerat necessitatibus explicabo eos deserunt!
+                </p>
+                <img src="lupa.png" alt="Lupa">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
