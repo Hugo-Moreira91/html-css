@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 1440px;
+            height: 900px;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main{
+            width: 80%;
+            margin-bottom: 30px;
+        }
+
+        .container-txt{
+            text-align: center;
+            width: 90%;
+        }
+
+        .container-global{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100%;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .grid1{
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100%;
+        }
+
+        .grid2{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .grid3{
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100%;
+        }
+
+        #supervisor, #calculator{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+
+        #supervisor{
+            background-color: hsl(0, 100%, 50%, .3);
+        }
+
+        #supervisor .bg-line{
+            background-color: purple;
+        }
+
+        #team-builder{
+            position: relative;
+            background-color: hsl(120, 100%, 25%, .3);
+        }
+
+        #team-builder .bg-line{
+            background-color: darkgreen;
+        }
+
+        #karma{
+            position: relative;
+            background-color: hsl(60, 100%, 50%, .3);
+        }
+
+        #karma .bg-line{
+            background-color: darkgoldenrod;
+        }
+
+        #calculator{
+            background-color: hsl(240, 100%, 50%, .3);
+        }
+
+        #calculator .bg-line{
+            background-color: darkblue;
+        }
+
+        .box{
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 10px 20px hsl(0, 0%, 0%, .3);
+        }
+
+        .bg-line{
+            position: absolute;
+            top: -4px;
+            left: 4px;
+            width: 98%;
+            height: 5px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .box p{
+            margin: 20px 0;
+        }
+
+        .box img{
+            width: 64px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container-txt">
+            <h1>Lorem ipsum dolor.</h1>
+            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In rerum autem cupiditate reprehenderit, odit perspiciatis perferendis a dolor ducimus doloremque explicabo delectus, aut debitis, enim ipsam sed illum iusto illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum velit ab maxime, modi maiores itaque quam blanditiis magni repellendus porro sequi tenetur expedita, aliquid dolore saepe ducimus architecto illum? Expedita?
+            </p>
+        </div>
+        <div class="container-global"> <!-- aqui aplica-se o display grid -->
+            <div class="grid1">
+                <div id="supervisor" class="box">
+                    <div class="bg-line"></div>
+                    <h2>Supervisor</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus in dignissimos suscipit sit magnam sint impedit accusantium nulla quo vel, recusandae alias ea repellendus nostrum! Quaerat necessitatibus explicabo eos deserunt!
+                    </p>
+                    <img src="lupa.png" alt="Lupa">
+                </div>
+            </div>
+            <div class="grid2">
+                <div id="team-builder" class="box">
+                    <div class="bg-line"></div>
+                    <h2>Team Builder</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus in dignissimos suscipit sit magnam sint impedit accusantium nulla quo vel, recusandae alias ea repellendus nostrum! Quaerat necessitatibus explicabo eos deserunt!
+                    </p>
+                    <img src="lupa.png" alt="Lupa">
+                </div>
+                <div id="karma" class="box">
+                    <div class="bg-line"></div>
+                    <h2>Karma</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus in dignissimos suscipit sit magnam sint impedit accusantium nulla quo vel, recusandae alias ea repellendus nostrum! Quaerat necessitatibus explicabo eos deserunt!
+                    </p>
+                    <img src="lupa.png" alt="Lupa">
+                </div>
+            </div>
+            <div class="grid3">
+                <div id="calculator" class="box">
+                    <div class="bg-line"></div>
+                    <h2>Calculator</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus in dignissimos suscipit sit magnam sint impedit accusantium nulla quo vel, recusandae alias ea repellendus nostrum! Quaerat necessitatibus explicabo eos deserunt!
+                    </p>
+                    <img src="lupa.png" alt="Lupa">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
